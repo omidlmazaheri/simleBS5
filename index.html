@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اولین پروژه بوت‌استرپ</title>
+    
+    <!-- لینک به فایل CSS بوت‌استرپ (نسخه ۵) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* استایل‌های سفارشی ساده برای زیبایی بیشتر */
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background-color: #0d6efd;
+            color: white;
+            padding: 50px 0;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ۱. نوار ناوبری (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">کلاس درس من</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">خانه</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">درباره ما</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">تماس</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ۲. بخش هیرو (Hero Section) -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1>خوش آمدید به کلاس وب</h1>
+            <p class="lead">این یک نمونه ساده است.</p>
+            <a href="#" class="btn btn-light btn-lg mt-3">شروع یادگیری</a>
+        </div>
+    </header>
+
+    <!-- ۳. محتوای اصلی با سیستم گرید (Grid System) -->
+    <div class="container mb-5">
+        <div class="row">
+            <!-- ستون اول: ۸ از ۱۲ قسمت -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">عنوان مقاله یا درس</h5>
+                        <p class="card-text">
+                            در اینجا متن اصلی درس قرار می‌گیرد. بوت‌استرپ به شما کمک می‌کند تا چیدمان صفحه را به راحتی مدیریت کنید.
+                            سیستم گرید بوت‌استرپ بر پایه ۱۲ ستون است.
+                        </p>
+                        <a href="#" class="btn btn-primary">بیشتر بخوانید</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ستون دوم: ۴ از ۱۲ قسمت -->
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">اطلاعات تکمیلی</h5>
+                        <p>این یک ستون کناری است که همیشه در سمت راست قرار می‌گیرد.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">نکته اول</li>
+                            <li class="list-group-item">نکته دوم</li>
+                            <li class="list-group-item">نکته سوم</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ۴. فوتر (Footer) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">طراحی شده | ۱۴۰۳</p>
+        </div>
+    </footer>
+
+    <!-- لینک به فایل JS بوت‌استرپ (برای کار کردن منوی موبایل و کامپوننت‌های تعاملی) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
